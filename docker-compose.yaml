@@ -1,4 +1,4 @@
-version: '3.3'
+version: '2.0'
 
 services:
    db:
@@ -20,7 +20,7 @@ services:
        - wordpress_data:/var/www/html
        - ./product_images_to_import:/var/www/html/product_images
      ports:
-       - "8080:80"
+       - "80:80"
      restart: always
      environment:
        WORDPRESS_DB_HOST: db:3306
